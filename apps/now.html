@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Now</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    /* ================= BASE ================= */
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      height: 100vh;
+      background-color: #1e1e1e;
+      color: #eaeaea;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Ubuntu, Cantarell, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* ================= WINDOW ================= */
+    .window {
+      width: 85%;
+      max-width: 920px;
+      background-color: #2b2b2b;
+      border-radius: 8px;
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.65);
+      overflow: hidden;
+    }
+
+    /* ================= TITLE BAR ================= */
+    .title-bar {
+      height: 38px;
+      background-color: #202020;
+      display: flex;
+      align-items: center;
+      padding: 0 12px;
+    }
+
+    .window-controls {
+      display: flex;
+      gap: 8px;
+      margin-right: 12px;
+    }
+
+    .control {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: #555;
+    }
+
+    .title {
+      font-size: 0.9rem;
+      color: #ddd;
+    }
+
+    /* ================= CONTENT ================= */
+    .content {
+      padding: 32px;
+    }
+
+    .headline {
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .subline {
+      color: #f57c00;
+      font-size: 0.95rem;
+      margin-bottom: 24px;
+    }
+
+    .section {
+      margin-bottom: 28px;
+    }
+
+    .section-title {
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: #ffffff;
+    }
+
+    .list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .list li {
+      padding: 6px 0;
+      color: #cccccc;
+    }
+
+    .status {
+      display: inline-block;
+      background-color: rgba(245, 124, 0, 0.15);
+      color: #f57c00;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      margin-left: 8px;
+    }
+
+    /* ================= FOOTER ================= */
+    .footer {
+      margin-top: 32px;
+      font-size: 0.8rem;
+      color: #999;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="window">
+    <!-- Title Bar -->
+    <div class="title-bar">
+      <div class="window-controls">
+        <div class="control"></div>
+        <div class="control"></div>
+        <div class="control"></div>
+      </div>
+      <div class="title">Now</div>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+      <div class="headline">What I'm Doing Right Now</div>
+      <div class="subline">Updated regularly • Living document</div>
+
+      <div class="section">
+        <div class="section-title">Current Focus</div>
+        <ul class="list">
+          <li>Building an Ubuntu-inspired portfolio OS</li>
+          <li>Strengthening frontend fundamentals</li>
+          <li>Practicing clean UI & layout design</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Active Projects</div>
+        <ul class="list">
+          <li>
+            Portfolio OS
+            <span class="status">In Progress</span>
+          </li>
+          <li>
+            Terminal UI Experiments
+            <span class="status">Ongoing</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Learning & Improving</div>
+        <ul class="list">
+          <li>JavaScript (deepening fundamentals)</li>
+          <li>Responsive UI layouts</li>
+          <li>System-inspired interface design</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Availability</div>
+        <ul class="list">
+          <li>Open to internships and entry-level roles</li>
+          <li>Available for collaboration and learning opportunities</li>
+        </ul>
+      </div>
+
+      <div class="footer">
+        Last updated: January 2026
+      </div>
+    </div>
+  </div>
+</body>
+</html>
